@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style/new_tab.css" rel="stylesheet" />
+
+    <link rel="shortcut icon" type="image/x-icon" href="https://assets.msn.com/statics/icons/favicon_newtabpage.png">
+    <title>New Tab</title>
+
+    <script type="text/javascript" src="script/new_tab.js"></script>
+</head>
+<body>
+
+    <div id="buscadores">
+        <img class="box" title="Google" id="google" src="img/google.png" onclick="busc('ggl')"/>
+        <img class="box" title="Bing" id="bing" src="img/bing.png" onclick="busc('bin')"/>
+        <img class="box" title="Norton" id="norton" src="img/norton.png" onclick="busc('nss')"/>
+        <img class="box" title="DuckDuckGo" id="duckduckgo" src="img/duckduckgo.png" onclick="busc('ddg')"/>
+        <img class="box" title="Qwant" id="qwant" src="img/qwant.png" onclick="busc('qwa')"/>
+    </div>
+    
+    <form action="http://www.google.com/search" method="get" class="formu" id="ggl">
+        <input class="busqueda" id="ggl-input" title="search" type="text" name="q" autocomplete="off" placeholder="Buscar en Google"/>
+        <input class="boton" type="image" src="img/lupa.jpg" title="GO" height="22px" width="22px"/>
+    </form>
+
+    <form action="http://www.bing.com/search" method="get" class="formu" id="bin">
+        <input class="busqueda" id="bin-input" title="Introduce el término de búsqueda" type="text" name="q" autocomplete="off" placeholder="Buscar en Bing"/>
+        <input class="boton" type="image" src="img/lupa.jpg" title="GO" height="22px" width="22px"/>
+    </form>
+
+    <form action="https://nortonsafe.search.ask.com/web" method="get" class="formu" id="nss">
+        <input class="busqueda" id="nss-input" title="Introduce el término de búsqueda" type="text" name="q" autocomplete="off" placeholder="Buscar con Norton"/>
+        <input class="boton" type="image" src="img/lupa.jpg" title="GO" height="22px" width="22px"/>
+    </form>
+
+    <form action="https://duckduckgo.com/" method="get" class="formu" id="ddg">
+        <input class="busqueda" id="ddg-input" title="Introduce el término de búsqueda" type="text" name="q" autocomplete="off" placeholder="Buscar con DuckDuckGo"/>
+        <input class="boton" type="image" src="img/lupa.jpg" title="GO" height="22px" width="22px"/>
+    </form>
+
+    <form action="https://www.qwant.com/" method="get" class="formu" id="qwa">
+        <input class="busqueda" id="qwa-input" title="Introduce el término de búsqueda" type="text" name="q" autocomplete="off" placeholder="Buscar en Qwant"/>
+        <input class="boton" type="image" src="img/lupa.jpg" title="GO" height="22px" width="22px"/>
+    </form>
+
+    <div id="shortcuts">
+        <a href="https://web.whatsapp.com/" class="mbox">
+            <img class="mbox" title="Whatsapp" id="whatsapp" src="img/whatsapp.png"/>
+        </a>
+        <a href="https://instagram.com" class="mbox">
+            <img class="mbox" title="Instagram" id="instagram" src="img/instagram.png"/>
+        </a>
+        <a href="https://web.telegram.org/z/" class="mbox">
+            <img class="mbox" title="Telegram" id="telegram" src="img/telegram.png"/>
+        </a>
+        <a href="https://github.com/chelmi00" class="mbox">
+            <img class="mbox" title="Github" id="github" src="img/github.png"/>
+        </a>
+    </div>
+    
+
+</body>
+</html>

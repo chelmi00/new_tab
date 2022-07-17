@@ -1,0 +1,89 @@
+html {
+    background-color: #000000;
+    background-image: url("../img/fondo.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    overflow: hidden;
+}
+
+.formu {
+    display: none;
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #4A4A4A;
+    width: 40vw;
+    border-radius: 46px;
+}
+
+.busqueda {
+    border: none;
+    color: #ffffff;
+    background: transparent;
+    outline: none;
+    font-size: 16px;
+    padding: 0 0 0 20px;
+    width: calc(100% - 65px);
+    height: 58px;
+}
+.busqueda::placeholder {
+    color: #AEAEAE;
+    opacity: 1;
+}
+
+.boton {
+    position: absolute;
+    right: 0%;
+    top: 50%;
+    transform: translate(-100%, -50%);
+}
+
+
+#buscadores {
+    display: flex;
+    flex-wrap: wrap;
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    width: 70vw;
+}
+
+.box {
+    max-width: 100px;
+    max-height: 100px;
+    height: fit-content;
+    margin: 0 auto;
+}
+.box:hover {
+    cursor: pointer;
+}
+
+
+#shortcuts {
+    display: flex;
+    flex-wrap: wrap;
+    position: absolute;
+    top: 95%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    width: 35vw;
+}
+
+.mbox {
+    max-width: 50px;
+    max-height: 50px;
+    height: fit-content;
+    margin: 0 auto;
+}
